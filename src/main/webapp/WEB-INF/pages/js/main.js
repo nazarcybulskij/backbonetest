@@ -47,6 +47,7 @@ $(function(){
         query:"Google",
         url:function(){
             return  "http://backnonetest-zhybulskij.rhcloud.com/test"+"?query=" + encodeURIComponent(this.query);
+            //return  "http://localhost:8080/test"+"?query=" + encodeURIComponent(this.query);
         }
 
     });
