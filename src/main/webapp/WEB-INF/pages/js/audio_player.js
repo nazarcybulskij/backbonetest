@@ -19,8 +19,9 @@ $(function(){
 
     App.Models.Image=Backbone.Model.extend({
         default:{
+            id:"",
             artist:"",
-            track :"",
+            title :"",
             url:""
         }
     });
@@ -52,8 +53,8 @@ $(function(){
         model:App.Models.Image,
         query:"",
         url:function(){
-            //return  "http://backnonetest-zhybulskij.rhcloud.com/searchvkmusic?query=" + encodeURIComponent(this.query);
-            return  "http://localhost:8080/searchvkmusic"+"?query=" + encodeURIComponent(this.query);
+            return  "http://backnonetest-zhybulskij.rhcloud.com/searchvkmusic?query=" + encodeURIComponent(this.query);
+            //return  "http://localhost:8080/searchvkmusic"+"?query=" + encodeURIComponent(this.query);
         }
 
     });

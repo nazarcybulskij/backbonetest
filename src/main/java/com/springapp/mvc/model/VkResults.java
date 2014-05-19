@@ -44,6 +44,23 @@ public class VkResults {
 
     }
     static public class track{
+
+
+
+        public void setOwner_id(String owner_id) {
+            this.owner_id = owner_id;
+        }
+
+        String  owner_id;
+        public String getId() {
+            return owner_id+"_"+id;
+        }
+
+        public void setId(String id) {
+            this.id = id;
+        }
+
+        String   id;
         public String getTitle() {
             return title;
         }
@@ -61,7 +78,7 @@ public class VkResults {
         }
 
         public String getUrl() {
-            return url;
+            return "http://backnonetest-zhybulskij.rhcloud.com/mp3/"+getId();
         }
 
         public void setUrl(String url) {
